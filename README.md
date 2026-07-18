@@ -31,7 +31,7 @@ Eksperimen ini membandingkan dua *Pre-trained Language Model* populer dari Huggi
 1. **IndoBERT** (`indobenchmark/indobert-base-p1`) - Model Monolingual Bahasa Indonesia.
 2. **XLM-RoBERTa** (`xlm-roberta-base`) - Model Multibahasa Internasional.
 
-### ⚙️ Eksplorasi Hyperparameter (Justifikasi SOTA)
+### ⚙️ Eksplorasi Hyperparameter 
 * **Learning Rate:** `2e-4` (Nilai ideal agar bobot kecil adapter LoRA dapat belajar dengan cepat).
 * **Batch Size:** `32` (Ukuran seimbang guna menjaga efisiensi RAM GPU T4 agar terhindar dari *Out of Memory*).
 * **Number of Epochs:** `3` (Cukup untuk mencapai konvergensi optimal tanpa risiko *overfitting*).
