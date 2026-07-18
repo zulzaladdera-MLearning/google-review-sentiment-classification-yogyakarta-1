@@ -1,15 +1,13 @@
 # ZEST-IT: Zero-Shot LLM Labeling and Low-Rank Adaptation for Robust Sentiment Transferability in Indonesia Tourism Reviews
 
-Repository ini berisi kode implementasi tugas akhir mata kuliah **Text Analytics (S2)** yang berfokus pada eksperimen *Cross-Cluster Domain Adaptation* (Adaptasi Lintas Domain) untuk analisis sentimen ulasan pariwisata Google Maps di Yogyakarta.
+Repository ini berisi kode implementasi tugas akhir mata kuliah **Text Analytics** yang berfokus pada eksperimen *Cross-Cluster Domain Adaptation* (Adaptasi Lintas Domain) untuk analisis sentimen ulasan pariwisata Google Maps di Yogyakarta.
 
 ---
 
-## 📌 Anggota Kelompok / Peneliti
-* **Nama:** [Nama Anda]
-* **NIM:** [NIM Anda]
-* **Program Studi:** Magister (S2) [Nama Program Studi Anda]
-* **Universitas:** [Nama Universitas Anda]
-
+## 📌 Peneliti
+* **Nama:** Zulza Laddera Aripin
+* **Program Studi:** Informatika
+* **Universitas:** Universitas Islam Indonesia
 ---
 
 ## 🧠 Permasalahan & Novelty
@@ -45,18 +43,13 @@ Eksperimen ini membandingkan dua *Pre-trained Language Model* populer dari Huggi
 
 | Metrik Evaluasi | IndoBERT | XLM-RoBERTa | Model Terbaik |
 | :--- | :---: | :---: | :---: |
-| **Accuracy** | 92.42% | **93.15%** | XLM-RoBERTa |
-| **Macro F1-Score** | **0.7480** | 0.7125 | **IndoBERT** |
-| **Macro Recall** | **0.7220** | 0.6552 | **IndoBERT** |
-| **Macro Precision** | 0.7840 | **0.8957** | XLM-RoBERTa |
+| **Accuracy** | 92.18% | **93.15%** | XLM-RoBERTa |
+| **Macro F1-Score** | **0.7288** | 0.7125 | **IndoBERT** |
+| **Macro Recall** | **0.6970** | 0.6552 | **IndoBERT** |
+| **Macro Precision** | **0.7790** | **0.8957** | XLM-RoBERTa |
 
 ### 🔍 Kesimpulan Utama
-* **IndoBERT memenangkan metrik utama Macro F1-Score (0.7480)**. Model monolingual terbukti jauh lebih sensitif (*Recall* tinggi = **0.7220**) dalam mendeteksi ekspresi kekecewaan atau keluhan lokal karena memiliki basis korpus kosa kata bahasa Indonesia yang kaya.
+* **IndoBERT memenangkan metrik utama Macro F1-Score (0.7288)**. Model monolingual terbukti jauh lebih sensitif (*Recall* tinggi = **0.6970**) dalam mendeteksi ekspresi kekecewaan atau keluhan lokal karena memiliki basis korpus kosa kata bahasa Indonesia yang kaya.
 * **XLM-RoBERTa bersikap lebih konservatif**, namun memiliki tingkat kepastian tebakan paling akurat dengan capaian *Macro Precision* tertinggi (**0.8957**).
 
 ---
-
-## 💻 Cara Menjalankan Notebook
-1. Unggah file dataset `yogyakarta_tourism_reviews.csv` ke dalam folder Google Drive Anda.
-2. Pastikan setelan runtime Google Colab Anda sudah diubah menggunakan **T4 GPU Accelerator**.
-3. Jalankan kode di setiap sel secara berurutan mulai dari instalasi library pendukung hingga visualisasi akhir *barchart*.
