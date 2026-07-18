@@ -43,7 +43,7 @@ Eksperimen ini membandingkan dua *Pre-trained Language Model* populer dari Huggi
 
 | Metrik Evaluasi | IndoBERT | XLM-RoBERTa | Model Terbaik |
 | :--- | :---: | :---: | :---: |
-| **Accuracy** | 92.18% | **93.15%** | XLM-RoBERTa |
+| **Accuracy** | **92.18%** | **93.15%** | XLM-RoBERTa |
 | **Macro F1-Score** | **0.7288** | 0.7125 | **IndoBERT** |
 | **Macro Recall** | **0.6970** | 0.6552 | **IndoBERT** |
 | **Macro Precision** | **0.7790** | **0.8957** | XLM-RoBERTa |
